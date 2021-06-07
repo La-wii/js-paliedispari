@@ -21,19 +21,37 @@ console.log(parolaInvertita);
 //     console.log('la parola non è palindroma');
 // }
 
+
+
 // Creare una funzione per capire se la parola inserita è palindroma
+// var parolaInversa = invertiParola(parolaUtente); 
 
-var parolaInversa = invertiParola(parolaUtente); 
-
-if(parolaUtente == parolaInversa){
-    console.log('la parola è palindroma');
-} else {
-    console.log('la parola non è palindroma');
-}
+// if(parolaUtente == parolaInversa){
+//     console.log('la parola è palindroma');
+// } else {
+//     console.log('la parola non è palindroma');
+// }
   
-function invertiParola(str){
-  var strInversa = str.split('').reverse().join('');  
-  return strInversa;
+// function invertiParola(str){
+//   var strInversa = str.split('').reverse().join('');  
+//   return strInversa;
+  
+// }
+
+function testPalindomi (funzionePalindromi){
+
+    if(parolaUtente == parolaInvertita){
+        console.log('la parola è palindroma');
+        return 'palindromo'
+    } else {
+        console.log('la parola non è palindroma');
+        return 'non palindromo'
+    }
+
 }
+
+var risultato = testPalindomi(parolaUtente);
+console.log(risultato);
+
 
 
