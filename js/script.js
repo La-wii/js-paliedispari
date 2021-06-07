@@ -16,10 +16,23 @@ console.log(numeroPc);
 
 
 // Sommiamo i due numeri. 
-var somma = numUtente,numeroPc;
+var somma = numUtente + numeroPc;
 console.log(somma);
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) 
-      
+
+
+function pariDispari(risultato){
+
+    if (risultato % 2 == 0){
+        return 'pari';
+    } else {
+        return 'dispari';
+    }
+
+} 
 
 // Dichiariamo chi ha vinto.
+
+var vincitore = pariDispari(somma);
+console.log(vincitore);
